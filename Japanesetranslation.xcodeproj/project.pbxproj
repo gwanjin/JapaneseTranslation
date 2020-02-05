@@ -12,9 +12,9 @@
 		57015DD023E0550F00DC25C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57015DCE23E0550F00DC25C9 /* Main.storyboard */; };
 		57015DD223E0550F00DC25C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57015DD123E0550F00DC25C9 /* Assets.xcassets */; };
 		57015DD523E0550F00DC25C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57015DD323E0550F00DC25C9 /* LaunchScreen.storyboard */; };
+		573E86E923EA8EE5008FB3A4 /* TranslationAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E86E823EA8EE5008FB3A4 /* TranslationAPIManager.swift */; };
 		57BE4F9223EA60CC0070ADD8 /* SendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BE4F9123EA60CC0070ADD8 /* SendData.swift */; };
 		57BE4F9423EA60E00070ADD8 /* ReceiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BE4F9323EA60E00070ADD8 /* ReceiveData.swift */; };
-		57BE4F9623EA7C0F0070ADD8 /* TranslationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BE4F9523EA7C0F0070ADD8 /* TranslationAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		57015DD123E0550F00DC25C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57015DD423E0550F00DC25C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57015DD623E0550F00DC25C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		573E86E823EA8EE5008FB3A4 /* TranslationAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationAPIManager.swift; sourceTree = "<group>"; };
 		57BE4F9123EA60CC0070ADD8 /* SendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendData.swift; sourceTree = "<group>"; };
 		57BE4F9323EA60E00070ADD8 /* ReceiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveData.swift; sourceTree = "<group>"; };
-		57BE4F9523EA7C0F0070ADD8 /* TranslationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 		5747C33F23E1B4C60023D5CB /* API */ = {
 			isa = PBXGroup;
 			children = (
-				57BE4F9523EA7C0F0070ADD8 /* TranslationAPI.swift */,
+				573E86E823EA8EE5008FB3A4 /* TranslationAPIManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -161,9 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				57015DCD23E0550F00DC25C9 /* ViewController.swift in Sources */,
+				573E86E923EA8EE5008FB3A4 /* TranslationAPIManager.swift in Sources */,
 				57BE4F9223EA60CC0070ADD8 /* SendData.swift in Sources */,
 				57BE4F9423EA60E00070ADD8 /* ReceiveData.swift in Sources */,
-				57BE4F9623EA7C0F0070ADD8 /* TranslationAPI.swift in Sources */,
 				57015DCB23E0550F00DC25C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
