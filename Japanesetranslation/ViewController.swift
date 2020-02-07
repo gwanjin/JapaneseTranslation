@@ -11,16 +11,25 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var inputText: UITextField!
-    @IBOutlet weak var outputText: UITextField!
+    @IBOutlet weak var outputText: UILabel!
     @IBOutlet weak var translateButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.outputText.layer.borderWidth = 0.5
+        self.outputText.layer.borderColor = UIColor.black.cgColor;
+        self.translateButton.layer.borderWidth = 0.5
+        self.translateButton.layer.borderColor = UIColor.black.cgColor;
     }
     
     @IBAction func tabButton(_ sender: UIButton) {
-        outputText.text = inputText.text;
+        TranslationAPIManager.translateToHiragana(inputText: inputText.text!, success: { receiveData in
+            DispatchQueue.main.async {
+                self.outputText.text = receiveData.converted.trimmingCharacters(in: .whitespacesAndNewlines)
+            }
+        }, failure: {
+            
+        })
     }
 }
 
